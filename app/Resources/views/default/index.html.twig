@@ -3,8 +3,11 @@
 {% block body %}
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="well well-sm">
+            <div class="col-md-10">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+<!--                 <div class="well well-sm">
                     <form class="form-horizontal" method="post" action="{{path('create')}}">
                         <fieldset>
                             <legend class="text-center header">Contact us</legend>
@@ -50,7 +53,7 @@
                             </div>
                         </fieldset>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
